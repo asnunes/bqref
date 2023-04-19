@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto 6 - BuzzQuizz</title>
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="style3.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page-content">
+      <header>
+        <h1>BuzzQuizz</h1>
+      </header>
+
+      <main class="body-container" id="main-content">
+        <div class="form-container" id="first-form">
+          <h1 class="form-title">Comece pelo começo</h1>
+
+          <form action="#">
+            <input
+              type="text"
+              placeholder="Título do seu quizz"
+              id="quizz-title"
+              data-test="title-input"
+            />
+            <input
+              type="text"
+              placeholder="URL da imagem do seu quizz"
+              id="quizz-URL-Image"
+              data-test="img-input"
+            />
+            <input
+              type="number"
+              placeholder="Quantidade de perguntas do quizz"
+              id="quizz-question-count"
+              data-test="questions-amount-input"
+            />
+            <input
+              type="number"
+              placeholder="Quantidade de níveis do quizz"
+              id="quizz-level-count"
+              data-test="levels-amount-input"
+            />
+          </form>
+
+          <button
+            data-test="go-create-questions"
+            class="form-button"
+            onclick="verifyValuesQuizzFirstPage()"
+          >
+            Prosseguir pra criar perguntas
+          </button>
+        </div>
+      </main>
+    </div>
+    <script src="../script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script></script>
+  </body>
+</html>
